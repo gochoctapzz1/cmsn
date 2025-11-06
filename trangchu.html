@@ -1,13 +1,74 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Xác suất mất acc 99%, hẹ hẹ</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cho cơ hội cuối ...</title>
+  <style>
+    body {
+      background: linear-gradient(135deg, #000000, #434343);
+      color: white;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      font-family: 'Segoe UI', Tahoma, sans-serif;
+      text-align: center;
+    }
+
+    h2 {
+      font-size: 1.8em;
+      margin-bottom: 20px;
+      text-shadow: 0 0 10px red;
+    }
+
+    button {
+      background: crimson;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      margin: 10px;
+      border-radius: 10px;
+      cursor: pointer;
+      font-size: 1em;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background: #ff4040;
+      transform: scale(1.05);
+    }
+
+    .khung {
+      background: rgba(255, 255, 255, 0.1);
+      border: 2px solid crimson;
+      border-radius: 20px;
+      padding: 40px;
+      box-shadow: 0 0 20px crimson;
+    }
+
+    .loi {
+      font-size: 1.5em;
+      margin-top: 20px;
+      animation: moDan 2s ease-in-out forwards;
+    }
+
+    @keyframes moDan {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
 </head>
 
 <body>
-    
-    <script src="./trangchu.js"></script>
+  <div class="khung">
+    <h2>HỎI LẠI LẦN NỮA, ARE YOU READY?</h2>
+    <button onclick="ready()">Toi dong tinh!</button>
+    <button onclick="readyy()">Toi khong dong tinh (nhưng lấy phủ định)!</button>
+    <div id="ketqua" class="loi"></div>
+  </div>
+
+  <script src="./trangchu.js"></script>
 </body>
 </html>

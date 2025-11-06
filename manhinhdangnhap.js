@@ -3,7 +3,7 @@ function nutDangnhap() {
     var oMatkhau = document.getElementById("matkhau");
 
     if (oNhap.value == "admin" && oMatkhau.value == "admin") {
-        alert("Đăng nhập thành công! (chuẩn bị bay màu!)");
+        alert("Đăng nhập thành công! (chuẩn bị bay màu, thông báo trước cho đỡ bất ngờ!)");
         window.location.href = "trangchu.html";
     } else {
         alert("Không đúng! Acc còn nguyên, chưa mất!");
