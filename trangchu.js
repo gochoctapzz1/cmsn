@@ -1,0 +1,1 @@
+document.write("còn cc gì nữa đâu mà khok voi sầu");

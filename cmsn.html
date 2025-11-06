@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cứ làm đi, không mất acc đâu!</title>
+  <style>
+    body {
+      height: 100vh; /* Chiếm toàn bộ chiều cao màn hình */
+      display: flex; /* Kích hoạt flexbox */
+      justify-content: center; /* Căn giữa theo chiều ngang */
+      align-items: center; /* Căn giữa theo chiều dọc */
+      background: linear-gradient(135deg, #ffccff, #ccffff); /* Nền màu nhẹ */
+      font-family: Arial, sans-serif;
+    }
+
+    .khung-dangnhap {
+      background: white;
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.2);
+      text-align: center;
+      width: 300px;
+    }
+
+    input {
+      width: 90%;
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      font-size: 14px;
+    }
+
+    button {
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="khung-dangnhap">
+    <h2>Mời thí chủ</h2>
+    <input id="tenDangnhap" placeholder="Tên đăng nhập"><br>
+    <input id="matkhau" type="password" placeholder="Điền mật khẩu"><br>
+    <button onclick="nutDangnhap()">Đăng nhập</button>
+  </div>
+
+  <script src="./manhinhdangnhap.js"></script>
+</body>
+</html>
